@@ -5,93 +5,126 @@
     list-style-type: none;
 }
 
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.surface-logo-text {
-    width: 100px;
+/*-----------ТИПОГРАФИКА----------*/
+
+h1 {
+    font-size: 1.75em;
 }
 
-.surface-logo {
-    width: 100px;
+h2 {
+    font-size: 3.125em;
+}
+
+h3 {
+    font-size: 1.4375em;
 }
 
 
-@media (min-width: 320px) {
 
-  
-    .main-screen-section {
-        position: relative;
-        min-height: 100vh;
+@media (min-width: 320px) and (max-width: 640px) {
 
-
-
-        background-image: url('../img/football_767.jpg');
-        background-repeat: no-repeat;
-        background-color: #1c1f40;
-        background-size: cover;
-    } 
-
-    .main-screen-section::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-color: #1c1f40;
-        opacity: 0.9;
-        position: absolute;
-        top: 0;
-        left: 0;
+    p {
+        font-size: 0.9375em;
     }
 
-    .main-screen-container {
-        position: relative;
-        min-height: 100vh;
-
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        
-        margin-left: 20px;
-
+    .store {
+        font-size: 53%;
     }
 
-    .surface-logo-text {
-        width: 133px;
-        margin: 0 auto;
+    .download-h2 {
+        font-size: 2em;
     }
     
-    
-
-    h1 {
-        color: #ffffff;
-        text-transform: uppercase;
+    .download-p {
+        font-size: 0.875em;
     }
-     
+
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
 
+    p {
+        font-size: 1rem;
+    }
+
+    .main-screen-section {
+       font-size: 2.2857142em; /*1em - 64px*/
+    }
+
+    .athlets-section, .players-section, .call-to-action-section, .download-app-section {
+        font-size: 1.6em;
+    }
+
+    .sportsmens-list {
+        font-size: 0.8696em;
+    }
+
+    .button-text {
+        font-size: 0.875rem;
+    }
+
+    .download-p {
+        font-size: 2.25rem;
+    }
+
+}
+
+@media (min-width: 961px) {
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .main-screen-section {
+        font-size: 3.2142856em; /*1em - 64px*/
+     }
  
-    
-    .main-screen-section {
-        background-image: url('../img/football_1280.jpg');
+     .athlets-section, .players-section, .call-to-action-section, .download-app-section {
+         font-size: 1.6em;
+     }
+ 
+     .sportsmens-list {
+         font-size: 0.9782em;
+     }
+ 
+     .button-text {
+         font-size: 0.875rem;
+     }
+ 
+     .download-p {
+         font-size: 2.25rem;
+     }
+}
+
+/*-----------ОСТАЛЬНОЕ----------*/
+
+@media (min-width: 320px){
+
+    .surface-logo-text {
+        width: 8.3123rem;
+        height: 2.25rem;
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .surface-logo-text {
+        width: 12.8125rem;
+        height: 4.666rem;
     }
 }
 
-@media (min-width: 961px) and (max-width: 1920px) {
-    .main-screen-section {
-        background-image: url('../img/football_1920.jpg');
+@media (min-width: 961px){
+    .surface-logo-text {
+        width: 11.9375rem;
+        height: 3.25rem;
     }
 }
-
-@media (min-width: 1921px) {
-    .main-screen-section {
-        background-image: url('../img/football_1920.jpg');
-    }
-}
-
-
 
 
 
